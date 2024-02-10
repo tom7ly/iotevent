@@ -24,7 +24,7 @@ npm run dev
 ## Usage
 Frontend:
 ```http
-http://localhost:8000
+http://localhost:8000/dashboard
 ```
 Backend:
 ```http
