@@ -1,6 +1,7 @@
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
 import { keyframes } from '@mui/system';
+import { MAIN_COLOR } from '../consts';
 
 const pulse = keyframes`
   0% {
@@ -25,9 +26,10 @@ export default function AlertSnackbar({ open, handleClose }: AlertSnackbarProps)
       open={open}
       autoHideDuration={2500}
       onClose={handleClose}
+      color={MAIN_COLOR}
       anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
       sx={{
-        animation: `${pulse} 2s infinite`,
+        animation: `${pulse} 2s `,
       }}
     >
       <Alert
